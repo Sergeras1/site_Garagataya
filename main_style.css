@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+    header .logo img {
+        width: 80px;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+.logo img{
+    width: 300px;
+    
+}
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-picture img {
+    width: 180px;
+    height: 200px;
+   
+    margin-right: 20px;
+}
+
+
+
+.intro-text h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Quote Section */
+.quote {
+    text-align: center;
+    padding: 30px;
+    background-color: #d7f7be;
+}
+
+    .quote p {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .quote button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+/* Work Areas Section */
+.work-areas {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.areas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.area {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .area img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .area h3 {
+        font-size: 20px;
+        margin: 20px 0 10px;
+    }
+
+    .area p {
+        font-size: 16px;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3b7dc;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+/* Responsive Design */
+max-width: 768px {
+    .intro
+
+{
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro-text {
+    margin-top: 20px;
+}
+
+.areas {
+    flex-direction: column;
+    gap: 40px;
+}
+}
