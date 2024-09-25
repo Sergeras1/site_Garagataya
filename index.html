@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Надежда Гарагатая</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='image/06ecae1b-242e-4851-be5a-2bdd4914a919.jfif') }}" alt="Надежда Гарагатая">
+        </div>
+        <ul id="navbar">
+            <!-- Навигация -->
+            <li>
+                <a href="#">Интеллектуальный квиз о себе</a>
+                <ul>
+                    <li><a href="#round1">1 раунд. 3 факта о себе</a></li>
+                    <li><a href="#round2">2 раунд. "Умники и умницы"</a></li>
+                    <li><a href="#round3">3 раунд. "Синема клуб"</a></li>
+                    <li><a href="#round4">4 раунд. "Сам себе репортер"</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Педагогическая мозаика</a>
+                <ul>
+                    <li><a href="#">Педагогические самоцветы</a></li>
+                    <li><a href="#">Самородки педагогических идей</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#mygame">Своя игра</a>
+                <ul>
+                    <li><a href="#">Мир своими глазами</a></li>
+                    <li><a href="#">Время странствий</a></li>
+                    <li><a href="#">Мастер интеллектуальных игр</a></li>
+                    <li><a href="#">О, спорт, ты мир!</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">В помощь родителям</a>
+                <ul>
+                    <li><a href="#">Играйте сами. Играйте с детьми</a></li>
+                    <li><a href="#">Это интересно</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Полезные ссылки</a></li>
+        </ul>
+    </header>
+
+    <section class="intro">
+        <div class="profile-picture">
+            <img src="{{ url_for('static', filename='image/vospitatel.png') }}" alt="Надежда Гарагатая" id="profileImage">
+        </div>
+        <div class="text-central">
+            <div class="intro-text">
+                <div class="reveal">Приветствую вас!</div>
+                <div class="reveal-text"><h1>Я - Надежда Гарагатая</h1></div>
+                <div class="reveal-text">
+                    <p>Я знаю, я не напрасно тружусь,</p>
+                    <p> - я воспитатель, и этим горжусь!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>Жизнь не останавливается ни на минуту, научитесь радоваться и наслаждаться каждым днем</p>
+        <p>Радуйтесь даже самому маленькому шагу, самому крошечному достижению своего ребенка. Помните, что вы не один!</p>
+        <video width="520" height="320" controls>
+            <source src="{{ url_for('static', filename='image/IMG_0111.MOV') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="work-areas fade-in">
+        <section id="round1">
+            <h2>Раунд 1. 3 факта о себе</h2>
+            <div class="portfolio-form">
+                <div class="field">
+                    <h3>1 Факт: </h3>
+                    <p>
+                        Я — воспитатель группы компенсирующей направленности для детей с функциональными расстройствами зрения в детском саду № 185 города Нижний Тагил.
+                    </p>
+                    <p>
+                        В 1998 году я окончила Нижнетагильский государственный педагогический институт по специальности «Педагогика и методика начального образования» с дополнительной квалификацией «Русский язык». Я имею диплом учителя начальных классов и русского языка.
+                    </p>
+                    <p>
+                        Моя работа заключается в помощи детям с нарушениями зрения в их адаптации и развитии, используя специальные методики обучения и воспитания, направленные на укрепление их способностей и навыков.
+                    </p>
+                    <p>
+                        В 2015 году  прошла профессиональную переподготовку в ГБОУ СПО СО «НТПК №2» по программе «Педагогическая деятельность воспитателя в дошкольной организации»
+                    </p>
+                    <p>
+                        Стаж педагогической работы 24 года.
+                    </p>
+
+                    <div class="field">
+                        <h3>2 Факт: </h3>
+                        <p>
+                            Принимаю активное участие в   конкурсах разной направленности. Постоянно повышаю профессиональный уровень, применяя полученные знания на практике, транслирую свой опыт в педагогических сообществах.
+                        </p>
+                        <p>
+                            Любой конкурс   для меня это умение выбрать нужные педагогические   знания и успешно применить их на практике. Я умею, я знаю – а значит могу! Главное в конкурсах — не бояться, верить в победу и показать не просто материал, а себя в этом материале.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <img src="{{ url_for('static', filename='image/1.jpg') }}" alt="Фото 1" class="photo active">
+                    <img src="{{ url_for('static', filename='image/2.jpg') }}" alt="Фото 2" class="photo">
+                    <img src="{{ url_for('static', filename='image/3.jpg') }}" alt="Фото 3" class="photo">
+                    <img src="{{ url_for('static', filename='image/5.jpg') }}" alt="Фото 5" class="photo">
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+
+                <div class="field">
+                    <h3>3 Факт: </h3>
+                    <p>
+                        С 2012 года традиционно являюсь наставником по организации партнёрской   деятельности студентов из НТПК№2 . Имею Благодарственные письма
+                    </p>
+                    <p>
+                        Как  опытный  педагог люблю работать с молодым поколением.   С удовольствием делюсь с ними своими знаниями и опытом: как стать профессионалом в своем деле. Они учат меня современным интересным новшествам. Такое сотрудничество дает возможность гармонично работать в команде и достигать большего уровня педагогического мастерства.
+                    </p>
+                </div>
+                <div class="container-image">
+                    <div class="image-gallery">
+                        <img src="{{ url_for('static', filename='image/gramota.jpg') }}" alt="Картинка 1" class="animated-image">
+                        <img src="{{ url_for('static', filename='image/blagodarstv.jpg') }}" alt="Картинка 1" class="animated-image">
+                        <img src="{{ url_for('static', filename='image/udosto.jpg') }}" alt="Картинка 2" class="animated-image">
+                        <img src="{{ url_for('static', filename='image/udostov2.jpg') }}" alt="Картинка 3" class="animated-image">
+                    </div>
+                </div>
+
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                </div>
+            </div>
+        </section>
+            <section id="round2">
+                <h2>Раунд 2. Умники и умницы</h2>
+                <div class="field">
+                    <p>
+                        Всегда создаю для своих воспитанников ситуацию успеха, даю   возможность проявить   способности в деле.  Мы вместе с ними идем от простого к сложному достигая вершин успеха. Высокие достижения моих воспитанников -лучшая победа для меня.
+                    </p>
+                </div>
+                <h3>Проекты</h3>
+                <table class="presentation-table">
+                    <thead>
+                        <tr>
+                            <th>Название презентации</th>
+                            <th>Скачать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Проект Осторожно коронавирус</td>
+                            <td><a href="{{ url_for('static', filename='prezentatsiya/Project_Caution_Covid.pptx') }}" class="download-button">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td>Проект жевательная резинка</td>
+                            <td><a href="{{ url_for('static', filename='prezentatsiya/The_Chewing_Gum_project.ppt') }}" class="download-button">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td>Проект маленькие помощники птиц</td>
+                            <td><a href="{{ url_for('static', filename='prezentatsiya/The_Little_Helpers_of_Birds_project.pptx') }}" class="download-button">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td>Проект нескучные опыты</td>
+                            <td><a href="{{ url_for('static', filename='prezentatsiya/the_project_is_not_boring_experiments.pptx') }}" class="download-button">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td>Проект что такое время?</td>
+                            <td><a href="{{ url_for('static', filename='prezentatsiya/The_project_What_is_time.pptx') }}" class="download-button">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td>Проект вторая жизнь бумаги</td>
+                            <td><a href="{{ url_for('static', filename='prezentatsiya/The_Second_Life_of_Paper_project.pptx') }}" class="download-button">Скачать</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="round3">
+                <h2>Раунд 3. Синема клуб</h2>
+                <div class="field">
+                    <p>
+                        В моей педагогической копилке есть большой синема клуб. Он состоит из видеороликов и фотогалереи о интересных моментах   жизни моих воспитанников и   их   достижениях.
+                    </p>
+                    <div class="gallery2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206885.jpg') }}" alt="Фото 1" class="photo2 active">
+                        <img src="{{ url_for('static', filename='image/5440796916704206886.jpg') }}" alt="Фото 2" class="photo2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206888.jpg') }}" alt="Фото 3" class="photo2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206889.jpg') }}" alt="Фото 4" class="photo2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206891.jpg') }}" alt="Фото 5" class="photo2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206892.jpg') }}" alt="Фото 6" class="photo2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206893.jpg') }}" alt="Фото 7" class="photo2">
+                        <img src="{{ url_for('static', filename='image/5440796916704206894.jpg') }}" alt="Фото 8" class="photo2">
+                    </div>
+                    <div class="progress-bar2">
+                        <div class="progress2" id="progress2"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="round4">
+                <h2>Раунд 4. Сам себе репортер</h2>
+                <div class="field">
+                    <p>
+                        В моей деятельности, жизни моих коллег и воспитанников происходит много приятных событий. О них поделиться хочется и рассказать другим. Мне нравится, что мои статьи приносят людям радость. Это еще одна грань моего мастерства и шаг к успеху.
+                    </p>
+                    <!-- Кнопка для скачивания PDF -->
+                    <a href="{{ url_for('static', filename='documents/5440796916704206953.pdf') }}" class="pdf-button" download>Посмотреть статьи в PDF</a>
+
+                </div>
+            </section>
+        </section>
+
+
+
+
+        <!-- Форма обратной связи -->
+        <div class="container">
+            <h1>Оставьте комментарий</h1>
+            <form id="commentForm">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваша электронная почта" required>
+                <textarea name="comment" placeholder="Ваш комментарий" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="comments">
+                <h2>Комментарии</h2>
+                <ul>
+                    {% for comment in comments %}
+                    <li>
+                        <strong>{{ comment.name }}:</strong> {{ comment.comment }}<br>
+                        <small>Дата и время: {{ comment.timestamp }}</small>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#">Medium</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+            </div>
+            <p>Accessibility statement | Privacy policy</p>
+        </footer>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>
