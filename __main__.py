@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, jsonify
 import json
 import os
 from datetime import datetime  # Импортируем модуль datetime
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 app = Flask(__name__)
 
@@ -16,6 +19,32 @@ def read_comments():
 def write_comments(comments):
     with open('comments.json', 'w') as f:
         json.dump(comments, f)
+
+# Функция для отправки email
+def send_email(name, email, comment):
+    sender_email = "nadyagara@yandex.ru"  # Ваш email Яндекса
+    receiver_email = "nadyagara@yandex.ru"  # Тот же email (для теста)
+    password = "mvlflrjyuctfwrez"  # Пароль приложения из Яндекса
+
+    subject = f"Новый комментарий от {name}"
+    body = f"Имя: {name}\nEmail: {email}\nКомментарий: {comment}"
+
+    msg = MIMEText(body)
+    msg['Subject'] = subject
+    msg['From'] = sender_email
+    msg['To'] = receiver_email
+
+    try:
+        # Используем SMTP_SSL для подключения через SSL
+        server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, msg.as_string())
+        server.quit()
+        print("Письмо отправлено успешно")
+    except smtplib.SMTPAuthenticationError as e:
+        print(f"Ошибка аутентификации: {e}")
+    except Exception as e:
+        print(f"Ошибка при отправке письма: {e}")
 
 @app.route('/')
 def index():
@@ -41,6 +70,9 @@ def add_comment():
     comments = read_comments()
     comments.append(new_comment)
     write_comments(comments)
+
+    # Отправляем комментарий на почту
+    send_email(name, email, comment)
 
     return jsonify(new_comment)
 
