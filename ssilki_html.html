@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Педагогические самоцветы</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ssilki_css.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}" class="button">Перейти на другую страницу</a>
+    </header>
+    <div class="gallery">
+        <!-- 12 фотографий с надписями и ссылками -->
+        <div class="photo-item">
+            <a href="https://edu.gov.ru/" target="_blank">
+                <img src="{{ url_for('static', filename='image/ministerstvo.png') }}" alt="Image 1">
+                <p>Министерство просвещения Российской Федерации</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://minobraz.egov66.ru/" target="_blank">
+                <img src="{{ url_for('static', filename='image/ministerstvo2.jpg') }}" alt="Image 2">
+                <p>Министерство образования и молодежной политики Свердловской области</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://upro-ntagil.ru/" target="_blank">
+                <img src="{{ url_for('static', filename='image/upravlenie_obraz.jpg') }}" alt="Image 3">
+                <p>Управление образования Администрации города Нижний Тагил </p>
+
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://detstvo-nt.ru" target="_blank">
+                <img src="{{ url_for('static', filename='image/mdaou_com.jpg') }}" alt="Image 4">
+                <p>МАДОУ детский сад «Детство» комбинированного вида</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://ntagil.org/" target="_blank">
+                <img src="{{ url_for('static', filename='image/nizgniy_tagil.png') }}" alt="Image 5">
+                <p>Нижний Тагил город трудовой доблести</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://www.irro.ru/ " target="_blank">
+                <img src="{{ url_for('static', filename='image/iro.png') }}" alt="Image 6">
+                <p>ИРО Институт Развития Образования Свердловской области</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://vk.com/dets_podelki" target="_blank">
+                <img src="{{ url_for('static', filename='image/det_podel.jpg') }}" alt="Image 7">
+                <p>Детские поделки</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://vk.com/ranneerazvitie" target="_blank">
+                <img src="{{ url_for('static', filename='image/ranee_razvit.jpg') }}" alt="Image 8">
+                <p>Ранее развитие</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://vk.com/funnylaboratory" target="_blank">
+                <img src="{{ url_for('static', filename='image/neskuchnaya.jpg') }}" alt="Image 9">
+                <p>Нескучная Лаборатория. Опыты для детей</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://vk.com/club189668693" target="_blank">
+                <img src="{{ url_for('static', filename='image/pervie_shagi.jpg') }}" alt="Image 10">
+                <p>Первые шаги в науку" ДОУ #4 г. Камышлов</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://detstvo-nt.ru/" target="_blank">
+                <img src="{{ url_for('static', filename='image/mdaou_com.jpg') }}" alt="Image 11">
+                <p>Детский сад № 185 (МАДОУ д/с "Детство")</p>
+            </a>
+        </div>
+        <div class="photo-item">
+            <a href="https://vk.com/detstvo185" target="_blank">
+                <img src="{{ url_for('static', filename='image/mdaou_com.jpg') }}" alt="Image 12">
+                <p>Детский сад № 185 (МАДОУ д/с "Детство") группа ВК</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+        </div>
+        <p>Accessibility statement | Privacy policy</p>
+    </footer>
+    <!--<script src="{{ url_for('static', filename='ssilki_js.js') }}"></script> -->
+</body>
+</html>

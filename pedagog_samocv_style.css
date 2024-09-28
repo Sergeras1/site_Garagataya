@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Стили для кнопки "Домой" */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white; /* Цвет текста */
+    background-color: #3498db; /* Цвет фона */
+    text-decoration: none; /* Убирает подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+    .button:hover {
+        background-color: #2980b9; /* Цвет фона при наведении */
+    }
+
+footer {
+    width: 100%; /* Полная ширина */
+    background-color: #f3b7dc; /* Цвет фона футера */
+    padding: 20px; /* Отступы внутри футера */
+    text-align: center; /* Центрируем текст */
+    position: relative; /* Относительное позиционирование */
+    left: 0; /* Начало от левого края */
+    right: 0; /* Начало от правого края */
+}
+
+.footer-links {
+    display: flex; /* Используем флекс для горизонтального расположения ссылок */
+    justify-content: center; /* Центрируем ссылки */
+    flex-wrap: wrap; /* Позволяем ссылкам переноситься на следующую строку при необходимости */
+}
+
+    .footer-links a {
+        margin: 0 10px; /* Отступы между ссылками */
+        color: black; /* Цвет текста ссылок */
+        text-decoration: none; /* Убираем подчеркивание */
+    }
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #ffffff;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.tasks {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+    .tasks li {
+        margin: 5px 0;
+    }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Основной стиль для картинки */
+.responsive-img {
+    border-radius: 5px; /* Закругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+    transition: transform 0.3s ease; /* Анимация */
+}
+
+/* Изменение размеров картинки для разных экранов */
+@media (min-width: 1200px) { /* Для больших экранов (мониторы) */
+    .responsive-img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) { /* Для планшетов */
+    .responsive-img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) { /* Для смартфонов */
+    .responsive-img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* Дополнительное оформление: эффект при наведении */
+.responsive-img:hover {
+    transform: scale(1.05); /* Увеличение картинки при наведении */
+}
+/*button*/
+.btn-new {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white; /* Цвет текста */
+    background-color: #3498db; /* Цвет фона */
+    text-decoration: none; /* Убирает подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+
+    position: fixed; /* Закрепление кнопки */
+    right: 20px; /* Расстояние от правого края */
+    bottom: 20px; /* Расстояние от нижнего края */
+    z-index: 1000; /* Поверх всех остальных элементов */
+}
+
+    .btn-new:hover {
+        -webkit-transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+        transform: rotateZ(5deg);
+    }

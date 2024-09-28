@@ -51,6 +51,27 @@ def index():
     comments = read_comments()
     return render_template('index.html', comments=comments)
 
+# Добавляем маршрут для страницы "Педагогические самоцветы"
+@app.route('/pedagog_samocv')
+def pedagog_samocv():
+    return render_template('pedagog_samocv_html.html')
+
+@app.route('/v_pom_rodit_Igraite_sami')
+def v_pom_rodit_Igraite_sami():
+    return render_template('v_pom_rodit_Igraite_sami.html')
+
+@app.route('/interes_html')
+def interes_html():
+    return render_template('interes_html.html')
+
+@app.route('/samorodki_html')
+def samorodki_html():
+    return render_template('samorodki_html.html')
+
+@app.route('/ssilki_html')
+def ssilki_html():
+    return render_template('ssilki_html.html')
+
 @app.route('/add_comment', methods=['POST'])
 def add_comment():
     name = request.form['name']

@@ -25,8 +25,8 @@
             <li>
                 <a href="#">Педагогическая мозаика</a>
                 <ul>
-                    <li><a href="#">Педагогические самоцветы</a></li>
-                    <li><a href="#">Самородки педагогических идей</a></li>
+                    <li><a href="{{ url_for('pedagog_samocv') }}">Самородки педагогических идей</a></li>
+                    <li><a href="{{ url_for('samorodki_html') }}">Педагогические самоцветы</a></li>
                 </ul>
             </li>
             <li>
@@ -41,11 +41,11 @@
             <li>
                 <a href="#">В помощь родителям</a>
                 <ul>
-                    <li><a href="#">Играйте сами. Играйте с детьми</a></li>
-                    <li><a href="#">Это интересно</a></li>
+                    <li><a href="{{ url_for('v_pom_rodit_Igraite_sami') }}">Это интересно</a></li>
+                    <li><a href="{{ url_for('interes_html') }}">Играйте сами. Играйте с детьми</a></li>
                 </ul>
             </li>
-            <li><a href="#">Полезные ссылки</a></li>
+            <li><a href="{{ url_for('ssilki_html') }}">Полезные ссылки</a></li>
         </ul>
     </header>
 

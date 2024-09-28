@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Стили для кнопки "Домой" */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white; /* Цвет текста */
+    background-color: #3498db; /* Цвет фона */
+    text-decoration: none; /* Убирает подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+    .button:hover {
+        background-color: #2980b9; /* Цвет фона при наведении */
+    }
+
+footer {
+    width: 100%; /* Полная ширина */
+    background-color: #f3b7dc; /* Цвет фона футера */
+    padding: 20px; /* Отступы внутри футера */
+    text-align: center; /* Центрируем текст */
+    position: relative; /* Относительное позиционирование */
+    left: 0; /* Начало от левого края */
+    right: 0; /* Начало от правого края */
+}
+
+.footer-links {
+    display: flex; /* Используем флекс для горизонтального расположения ссылок */
+    justify-content: center; /* Центрируем ссылки */
+    flex-wrap: wrap; /* Позволяем ссылкам переноситься на следующую строку при необходимости */
+}
+
+    .footer-links a {
+        margin: 0 10px; /* Отступы между ссылками */
+        color: black; /* Цвет текста ссылок */
+        text-decoration: none; /* Убираем подчеркивание */
+    }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-item {
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+    .photo-item a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .photo-item img {
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .photo-item p {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #e6e6e6;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .photo-item:hover {
+        transform: scale(1.05);
+    }

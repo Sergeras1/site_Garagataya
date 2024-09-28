@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Педагогические самоцветы</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='interes_css.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}" class="button">Перейти на другую страницу</a>
+    </header>
+    <video width="520" height="320" controls>
+        <source src="{{ url_for('static', filename='image/lerning_bukv.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h3>Разработки</h3>
+    <table class="presentation-table">
+        <thead>
+            <tr>
+                <th>Название документов</th>
+                <th>Скачать</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Один день в винтернете - Это интерактивная историческая игра</td>
+                <td><a href="{{ url_for('static', filename='documents/One_day_in_the_winter_thereis_an_interactive_storytellin_game.ppsx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Викторина</td>
+                <td><a href="{{ url_for('static', filename='documents/Quiz .pps') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Дорожные знаки</td>
+                <td><a href="{{ url_for('static', filename='documents/Road_signs.pptx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Игра "Знакомые сказки"</td>
+                <td><a href="{{ url_for('static', filename='documents/Familiar_fairy_tales game.ppsx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Понятная занятная логика Интерактивная игра Что лишнее</td>
+                <td><a href="{{ url_for('static', filename='documents/Understandable_self_employed_logic_interaction_play_the latest.ppsx') }}" class="download-button">Скачать</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <footer>
+        <div class="footer-links">
+        </div>
+        <p>Accessibility statement | Privacy policy</p>
+    </footer>
+    <script src="{{ url_for('static', filename='interes_js.js') }}"></script>
+</body>
+</html>

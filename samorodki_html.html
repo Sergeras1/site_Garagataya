@@ -1,0 +1,112 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Педагогические самоцветы</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='samorodki_css.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}" class="button">Перейти на другую страницу</a>
+    </header>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video width="520" height="320" controls>
+                <source src="{{ url_for('static', filename='image/history_time.mov') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">История времени</div>
+        </div>
+
+        <div class="video-wrapper">
+            <video width="520" height="320" controls>
+                <source src="{{ url_for('static', filename='image/The_history_of_chewing_gum.mov') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">История жвачки</div>
+        </div>
+    </div>
+    
+    <h3>Педагогические самоцветы</h3>
+    <table class="presentation-table">
+        <thead>
+            <tr>
+                <th>Название документов</th>
+                <th>Скачать</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Знакомимся с проффесией доктора</td>
+                <td><a href="{{ url_for('static', filename='documents/Getting_to_kno_the_profession_of_a_doctor.pptx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Интересные места Нижнего Тагила</td>
+                <td><a href="{{ url_for('static', filename='documents/Points_of_interest_Tagil.ppt') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>История создания СоюзМультфильма</td>
+                <td><a href="{{ url_for('static', filename='documentsThe_history_of_soyuzmultfilm.ppt') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>История подносного промысла</td>
+                <td><a href="{{ url_for('static', filename='documents/The_history_of_a_similar_field.ppt') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Наша Родина - Россия</td>
+                <td><a href="{{ url_for('static', filename='documents/Our_Homeland_Is_Russia.ppt') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Веселый счет</td>
+                <td><a href="{{ url_for('static', filename='documents/Presentation_of_a_fun_account.pptx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Изучаем дни недели</td>
+                <td><a href="{{ url_for('static', filename='documents/Presentation_We_study_the_days_of_the_week.ppt') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Промыслы Тагила</td>
+                <td><a href="{{ url_for('static', filename='documents/Crafts_of_Tagil.pptx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Дорожные знаки</td>
+                <td><a href="{{ url_for('static', filename='documents/Road_signs.pptx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Летние виды спорта</td>
+                <td><a href="{{ url_for('static', filename='documents/Summer_sports.ppt') }}" class="download-button">Скачать</a></td>
+            </tr>
+
+            <tr>
+                <td>Геометрические фигуры</td>
+                <td><a href="{{ url_for('static', filename='documents/Presentation_geometric_Figures.pptx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Прогулка - это развлечение</td>
+                <td><a href="{{ url_for('static', filename='documents/A_walk_is_an_entertainment.docx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>досуг_технол_карт_клуб_фан_математики</td>
+                <td><a href="{{ url_for('static', filename='documents\DOSUG_TECHNOL_CART_CLUB_Fun_mathematics.docx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Досуг_технологии_карты_геометрический_калейдоскоп</td>
+                <td><a href="{{ url_for('static', filename='documents/Dosug_technol_cart_geometric_Kaleidoscope.docx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Досуг по ПДД</td>
+                <td><a href="{{ url_for('static', filename='documents/Leisure_according_to_PDD.docx') }}" class="download-button">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>Математическое путешествие</td>
+                <td><a href="{{ url_for('static', filename='documents/Mathematical_travel_training_group.doc') }}" class="download-button">Скачать</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <div class="footer-links">
+        </div>
+        <p>Accessibility statement | Privacy policy</p>
+    </footer>
+    <script src="{{ url_for('static', filename='samorodki_js.js') }}"></script>
+</body>
+</html>
